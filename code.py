@@ -23,7 +23,7 @@ def add_segment_length(input_file, output_file):
             row['segment_length'] = segment_length
             writer.writerow(row)
 #names of files
-if _name_ == "_main_":
+if __name__ == "__main__":
     input_file = 'brca_cnvs_tcga-1.csv'  
     output_file = 'output.csv'  
     add_segment_length(input_file, output_file)
